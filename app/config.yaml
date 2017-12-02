@@ -1,0 +1,30 @@
+
+# The log file location   
+log:
+filename: "spero.log"
+
+# All the databases used by the system
+databases:
+  dev: "data/spero.sqlite"
+  stage: ""
+  prod: ""
+
+# For every table in the database, add an item here
+models:
+  mainDB:
+    - Programs
+    - Users
+    - Courses
+
+
+
+# this makes the navigation bar
+mainMenu:
+  - title: "Home"
+    link: "/"
+  - title: "Jobs"
+    link: "jobs"
+  - title: "Forms"
+    link: "forms"
+  - title: "About"
+    link: "about"

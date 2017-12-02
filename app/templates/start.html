@@ -1,0 +1,20 @@
+<!--The below line of code is jinja which is a template engine for python-->
+<!-- If you want to learn more about jinja, refer to jinja documentation-->
+{% extends "base.html" %} 
+{% set currentPage = "start" %}
+
+{# An example first page #}
+{% block body %}
+<h1>It's Alive!</h1>
+<img src="https://49.media.tumblr.com/dc2acffbea837dc5277bb1b469aafbb7/tumblr_n7u8czdwFI1qzs5cqo1_500.gif"/>
+<p>Welcome to your application. Don't forget to read the documentation and comments. They are your best friends.</p>
+<p>Always know where the emergency exits are at</p>
+<img src="https://dorothydalton.files.wordpress.com/2012/04/flight-attendant-exits.jpg"/>
+<h2>Useful Links</h2>
+<ul>
+<li><a href="http://jinja.pocoo.org/">Jinja Documentation</a></li>
+<li><a href="http://docs.peewee-orm.com/en/latest/">Peewee Documentation</a></li>
+<li><a href="https://git-scm.com/documentation">Git documentation</a></li>
+<li><a href="http://flask.pocoo.org/docs/0.10/"> Flask Documentation</a></li>
+</ul>
+{% endblock %}
