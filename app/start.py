@@ -6,6 +6,9 @@ from allImports import *
 def start():
   return render_template("index.html")
 
+@app.route("/register", methods = ["GET", "POST"])
+def register():
+  return render_template("register.html")
 
 @app.route("/sign", methods=["GET", "POST"])
 def sign():
@@ -34,7 +37,10 @@ def info(username):
 @app.route("/search/<username>", methods=["GET", "POST"])
 def search(username):
     user = Refugees.get(Refugees.username==username)
-    return render_template("refugee/search.html", cfg=cfg, user=user)
+    jobs=[]
+    for job in Jobs.select():
+        jobs.append(job)
+    return render_template("refugee/search.html", cfg=cfg, user=user, jobs=jobs)
 
 @app.route("/dashboard/<username>", methods=["GET"])
 def dashboard(username):
@@ -43,7 +49,7 @@ def dashboard(username):
 
 @app.route("/settings", methods=["GET"])
 def settings():
-    return render_template("refugee/settings.html")
+    return render_template("refugee/settings.html", cfg=cfg)
 
 @app.route("/out", methods=["GET"])
 def out():
@@ -57,9 +63,17 @@ def profil(username):
     user=Employers.get(Employers.username==username)
     return render_template("employer/profil.html", cfg=cfg, user=user)
 
-@app.route("/postjob", methods=["GET"])
-def postjob():
-    return render_template("profile.html")
+@app.route("/postjob/<username>", methods=["GET", "POST"])
+def postjob(username):
+    if request.method == 'POST':
+      title=request.form["title"]
+      description=request.form["description"]
+      salary=request.form['salary']
+      location=request.form['location']
+      print title, description, location, salary #Todo: this data should be stored in blockchain
+      return render_template("employer/jobpost.html", user=user, cfg=cfg)
+    user=Employers.get(Employers.username==username)
+    return render_template("employer/jobpost.html", user=user, cfg=cfg)
 
 @app.route("/dash/<username>", methods=["GET"])
 def dash(username):
@@ -68,7 +82,7 @@ def dash(username):
 
 @app.route("/setting", methods=["GET"])
 def setting():
-    return render_template("profile.html")
+    return render_template("employer/setting.html", cfg=cfg)
 
 @app.route("/logout", methods=["GET"])
 def logout():

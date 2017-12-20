@@ -11,11 +11,11 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
         <div>
-        <a class="navbar-brand" href="#"><img src="/static/img/logo.png" class="img-responsive" style="max-width:35px; margin-left:10px"></a>
+        <a class="navbar-brand" href="{{ url_for('info', username=cfg['users']['refugee']) }}"><img src="/static/img/logo.png" class="img-responsive" style="max-width:35px; margin-left:10px"></a>
       </div>
       <ul class="nav navbar-nav">
-        <li ><a href="{{ url_for('dashboard', username=cfg['users']['refugee']) }}" style="color:#26357a; font-size: 20px;">Dashboard<span  class="pull-right hidden-xs showopacity"><img src="/static/img/nav/status.png" class="img-responsive" style="max-width:30px"></span></a></li>
         <li ><a href="{{ url_for('info', username=cfg['users']['refugee']) }}" style="color:#26357a; font-size: 20px;">Profile<span  class="pull-right hidden-xs showopacity"><img src="/static/img/nav/user.png" class="img-responsive" style="max-width:30px"></span></a></li>
+          <li ><a href="{{ url_for('dashboard', username=cfg['users']['refugee']) }}" style="color:#26357a; font-size: 20px;">Dashboard<span  class="pull-right hidden-xs showopacity"><img src="/static/img/nav/status.png" class="img-responsive" style="max-width:30px"></span></a></li>
         <li ><a href="{{ url_for('search', username=cfg['users']['refugee']) }}" style="color:#26357a; font-size: 20px;">Search<span  class="pull-right hidden-xs showopacity"><img src="/static/img/nav/search.png" class="img-responsive" style="max-width:30px"></span></a></li>
         <li ><a href="{{ url_for('settings') }}" style="color:#26357a; font-size: 20px;">Settings<span  class="pull-right hidden-xs showopacity"><img src="/static/img/nav/settings.png" class="img-responsive" style="max-width:30px"></span></a></li>
         <li ><a href="{{ url_for('out') }}" style="color:#26357a; font-size: 20px;">Log Out<span class="pull-right hidden-xs showopacity"><img src="/static/img/nav/logout.png" class="img-responsive" style="max-width:30px"></span></a></li>
