@@ -19,13 +19,6 @@ models:
 
 
 
-# this makes the navigation bar
-mainMenu:
-  - title: "Home"
-    link: "/"
-  - title: "Jobs"
-    link: "jobs"
-  - title: "Forms"
-    link: "forms"
-  - title: "About"
-    link: "about"
+users:
+  refugee: "scottj"
+  employer: "davood"
