@@ -1,0 +1,229 @@
+
+{% extends "base.html" %}
+{% block body %}
+{% include 'indexnav.html' %}
+<section id="sectionone">
+  <div id="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="centered col-md-10 col-md-offset-2">
+                <div class="blockcontent">
+                  <div class="decent">Decentralized Job Search For Refugees</div>
+                  <span class="subheading" style="color:white"> we all deserve to work, we all deserve to hope </span>
+                </div>
+
+                <!-- Register Button -->
+                <div class="register">
+                  <button type="button" class="btn btn-primary">Register</button>
+                  <span class="subheading"> It's Free </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  </section>
+
+
+  <!-- Header -->
+    <header class="sectiontwo">
+      <div class="container">
+        <div class="row">
+          <div class="centered col-md-10 col-md-offset-2">
+            <div class="intro-text">
+              <h1 style="color:black;">How It Works </h1>
+            </div
+              <div class="intro-heading">
+                <img src="/static/img/refugees_asylums.png" class="img-responsive">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section id="sectionthree">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ">
+      <img src="/static/img/angel.png" class="img-responsive" style="max-width:300px;">
+    </div>
+    <div class="col-md-6">
+
+      <div class="block">
+         <div class="section-title">
+           <h1>Hello. I am Amica!</h1>
+         </div>
+         <p style="color:white">
+           In 2015, I was offered four year full-tuition scholarship to attend Berea College which is located at Berea, KY.
+           Currently, I am a junior studying computer science.
+           Berea College is a work and study school; every student has a 15 hour labor position related to his/her major each semester.
+           Thus, I work as a Full-Stack Student Software Developer in a team of 8 building
+           web applications that improve the administrative workflow of various Berea College departments.
+           My goal is to make a positive impact in my community and enhance the lives of people
+           using the power of technology.
+
+         </p>
+       </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<section class="sectionfour">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="title">
+      <h2 style="color:white"> No Human Is Illegal </h2>
+    </div>
+        <p style="color:white">
+          Being a refugee is not a choice, understand that no one puts their children in a boat unless
+          the water is safer than the land. Join today and support by being an Employer.
+
+        </p>
+      </div>
+</div>
+</div>
+</section>
+
+
+
+<!-- footer Start -->
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <p>SPERO Project</p>
+    </div>
+  </div>
+</div>
+</footer>
+
+<style>
+body, html {
+    height: 100%;
+}
+
+.navbar{
+  min-height: 80px;
+
+
+}
+footer{
+  background: black;
+  text-align: center;
+
+  padding-top: 48px;
+  padding-bottom: 55px;
+
+
+}
+.sectionfour{
+  padding: 50px 0px;
+  background-color: #3423a6;
+  text-align: center;
+
+}
+
+
+#sectionthree{
+  padding: 50px 0px;
+  background-color: #5b3715;
+
+}
+
+.sectiontwo{
+      padding: 30px 0;
+
+}
+
+
+
+#sectionone{
+    background-image: url("/static/img/background.jpeg");
+    padding-top: 80px;
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+#overlay{
+    background-color: black;
+    opacity: 0.50;
+    height: 100%;
+}
+
+.centered{
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+div{
+    display: block;
+  }
+
+
+.decent{
+    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    line-height: 60px;
+    color: white;
+    margin-top: 50px;
+
+}
+
+h1, h2{
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 60px;
+  color: black;
+  margin-top: 50px;
+  color: white;
+
+}
+
+.subheading{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.btn{
+  background-color:transparent;
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 20px;
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+  {% endblock %}

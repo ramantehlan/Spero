@@ -1,5 +1,5 @@
 
-# The log file location   
+# The log file location
 log:
 filename: "spero.log"
 
@@ -12,9 +12,10 @@ databases:
 # For every table in the database, add an item here
 models:
   mainDB:
-    - Programs
-    - Users
-    - Courses
+    - Refugees
+    - Employers
+    - Asylums
+    - Jobs
 
 
 

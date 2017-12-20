@@ -1,6 +1,6 @@
 # WARNING: NOT FOR USE IN PRODUCTION AFTER REAL DATA EXISTS!!!!!!!!!!!!!!!!!!!!!!
 '''
-This script creates the database tables in the SQLite file. 
+This script creates the database tables in the SQLite file.
 Update this file as you update your database.
 '''
 import os, sys
@@ -29,7 +29,7 @@ for fname in sqlite_dbs:
     print ("Database {0} should not exist at this point!".format(fname))
   print ("Creating empty SQLite file: {0}.".format(fname))
   open(fname, 'a').close()
-  
+
 
 def class_from_name (module_name, class_name):
   # load the module, will raise ImportError if module cannot be loaded
@@ -37,7 +37,7 @@ def class_from_name (module_name, class_name):
   # get the class, will raise AttributeError if class cannot be found
   c = getattr(module_name, class_name)
   return c
-    
+
 """This file creates the database and fills it with some dummy run it after you have made changes to the models pages."""
 def get_classes (db):
   classes = []
@@ -47,42 +47,44 @@ def get_classes (db):
     classes.append(c)
   return classes
 
-  
+
 mainDB.create_tables(get_classes('mainDB'))
 
 # Adding dummy data
-users = Users(  firstName = "Scott",
-                lastName  = "Heggen",
-                username  = "heggens",
-                age       = 33,
-                program   = "1"
-             ).save()
 
-users = Users(  firstName = "Matt",
-                lastName  = "Jadud",
-                username  = "jadudm",
-                age       = 39,
-                program   = "2"
-             ).save()           
-             
-prog = Programs ( programName = "Computer and Information Science",
-                  abbreviation = "CSC"
-                ).save()
-
-prog = Programs ( programName = "Technology and Applied Design",
-                  abbreviation = "TAD"
-                ).save()
-
-course =  Courses ( courseName = "Software Design and Implementation",
-                    coursePrefix = "CSC",
-                    courseNumber = 226,
-                    pid = 1,
-                    instructor = 1
+refugee = Refugees( firstName = "Scott",
+                    lastName="Johnson",
+                    username="scottj",
+                    location="Burton St. Lexington, KY",
+                    experience="1 year",
+                    education="High School",
+                    age=33,
+                    socialsecurity=121324435
                   ).save()
 
-course =  Courses ( courseName = "Electricity and Electronics",
-                    coursePrefix = "TAD",
-                    courseNumber = 265,
-                    pid = 2,
-                    instructor = 2
+refugee = Refugees( firstName = "Ahmad",
+                    lastName="Hafiz",
+                    username="hafiza",
+                    location="112 Safari St. Dubai 20827",
+                    experience="4 years",
+                    education="Bachelor's Degree",
+                    age=26,
+                    socialsecurity=121321213124
                   ).save()
+
+
+asylum =  Asylums( firstName = "Kenaria", lastName="Brown", username="brownk").save()
+asylum =  Asylums( firstName = "Halima", lastName="Azizi", username="halima").save()
+
+employer =  Employers( firstName = "Aqueel", lastName="Dawood", username="davood").save()
+employer =  Employers( firstName = "Muhammad", lastName="Shatri", username="shatri").save()
+employer =  Employers( firstName = "Matthew", lastName="Jadud", username="matthew").save()
+employer =  Employers( firstName = "Mario", lastName="Robins", username="marior").save()
+
+job = Jobs(employer=1, title="Car Washer", address="24 Lexington Ave, CA, USA", salary="$8/hour" ).save()
+job = Jobs(employer=2, title="Front-end Developer", address="65 Burton Ave, KY, USA", salary="$15/hour" ).save()
+job = Jobs(employer=3, title="Maintenance Technician", address="344 Lexington Ave, CA, USA", salary="$7/hour" ).save()
+job = Jobs(employer=4, title="Driver", address="75 Alto Ave, CA, USA", salary="$11/hour" ).save()
+job = Jobs(employer=1, title="Cashier", address="190 Burton Ave, MA, USA", salary="$9/hour" ).save()
+job = Jobs(employer=2, title="Painter Wanted", address="90 San Luis Ave, NY, USA", salary="$9/hour" ).save()
+job = Jobs(employer=3, title="Post Office", address="232 Morro Ave, CA, USA", salary="$9/hour" ).save()
