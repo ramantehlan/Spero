@@ -88,7 +88,6 @@ def postjob(username):
 @app.route("/dash/<username>", methods=["GET"])
 def dash(username):
     user=Employers.get(Employers.username==username)
-    print api.get_json("QmRX4zG87omtCHLJnJZn7c2Vp2V9e3XqHdk79o4BfTRA7Z")
     return render_template("employer/dashboard.html", cfg=cfg, user=user)
 
 @app.route("/setting", methods=["GET"])
