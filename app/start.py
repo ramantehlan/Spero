@@ -63,14 +63,24 @@ def profil(username):
     user=Employers.get(Employers.username==username)
     return render_template("employer/profil.html", cfg=cfg, user=user)
 
+joblist=[]
 @app.route("/postjob/<username>", methods=["GET", "POST"])
 def postjob(username):
     if request.method == 'POST':
+      user=Employers.get(Employers.username==username)
       title=request.form["title"]
       description=request.form["description"]
       salary=request.form['salary']
       location=request.form['location']
-      print title, description, location, salary #Todo: this data should be stored in blockchain
+      job={}
+      job["title"]= title
+      job["description"]=description
+      job["salary"]=salary
+      job["location"]=location
+      ipfs=api.add_json(job).encode("utf-8")
+      print "This is stored in IPFS file system", ipfs
+      joblist.append(ipfs)
+      print joblist
       return render_template("employer/jobpost.html", user=user, cfg=cfg)
     user=Employers.get(Employers.username==username)
     return render_template("employer/jobpost.html", user=user, cfg=cfg)
@@ -78,6 +88,7 @@ def postjob(username):
 @app.route("/dash/<username>", methods=["GET"])
 def dash(username):
     user=Employers.get(Employers.username==username)
+    print api.get_json("QmRX4zG87omtCHLJnJZn7c2Vp2V9e3XqHdk79o4BfTRA7Z")
     return render_template("employer/dashboard.html", cfg=cfg, user=user)
 
 @app.route("/setting", methods=["GET"])

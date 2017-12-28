@@ -1,5 +1,5 @@
-# This file sets up the virtual environment. 
-# Run "source setup.sh" each time you want to run the app. 
+# This file sets up the virtual environment.
+# Run "source setup.sh" each time you want to run the app.
 
 mkdir -p data
 
@@ -13,3 +13,4 @@ fi
 pip install Flask
 pip install peewee
 pip install pyyaml
+pip install ipfsapi

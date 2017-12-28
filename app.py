@@ -12,7 +12,9 @@ To rename the app, you need to make three changes:
 '''
 import os
 
+
 from app import app
+import ipfsapi
 
 # Builds the server configuration
 if os.getenv('IP'):
@@ -23,9 +25,9 @@ else:
 if os.getenv('PORT'):
   PORT = int(os.getenv('PORT'))
 else:
-  PORT = 8080
+  PORT = 8081
 
 # Print statements go to your log file in production; to your console while developing
+api = ipfsapi.connect('127.0.0.1', 5001)
 print ("Running server at http://{0}:{1}/".format(IP, PORT))
 app.run(host = IP, port = PORT, debug = True, threaded = True)
-
