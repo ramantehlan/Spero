@@ -14,14 +14,14 @@ alt="Start Demo" width="1000" height="600" border="10" /></a>
 * git
 * [IPFS](https://dist.ipfs.io/#go-ipfs)
 
-## Creating Development Environment ##
+## Setting Up Development Environment ##
 
-1. **Fork** the reposistory from BitBucket and rename to your project.
+1. **Fork** the reposistory from Github and rename to your project.
 
 2. If working on a **local machine**, then clone the repo from your terminal
 
 ``` bash
-git clone https://username@bitbucket.org/username/repositoryname.git
+git clone https://github.com/ramantehlan/Spero
 source setup.sh
 ipfs daemon (this will be running on localhost:8080)
 python app.py (this will be running on localhost:8081)
