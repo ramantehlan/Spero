@@ -5,6 +5,8 @@
 # Welcome to Project Spero
 **Spero** is an open source decentralized job marketplace for refugees, asylums, NGOs and governments. we leverage blockchain and artificial intelligence to connected about 65.6 million refugees to jobs around the world. This project was created in December 2017 for the biggest [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon organized by **UAE Government** in 2017.
 
+Here are some problems which were tackled while creating Spero.
+
 **Not all refugees are educated or have a mobile/computer, can still they use Spero?**
 
 * Refugees can register themselves or through other asylums, NGOs and governments, they can also ask the experienced or educated refugees to register them.
@@ -32,7 +34,7 @@
 
 
 ## Design
-*This is the first design/prototype which was created for Spero, the current design might differ form it.*
+*This is the first design/prototype which was created for Spero, the current design might differ from it.*
      
 <p align="center">
        <img src="https://ramantehlan.github.io/Spero/app/static/Design/WelcomePage.png" width="500" border="5">
@@ -51,7 +53,7 @@
 
 
 ## Demo Video
-*This is the final submission video for [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon*
+*This is the final submission video for [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon.*
 
 <a href="https://www.youtube.com/watch?v=OQjC_p12kL0" target="blank"><img src="https://image.ibb.co/nBZHSG/pict.jpg"
 alt="Start Demo" width="430" border="5" /></a>
@@ -67,7 +69,7 @@ alt="Start Demo" width="430" border="5" /></a>
 
 1. **Fork** the reposistory from Github and rename to your project.
 
-2. If working on a **local machine**, then clone the repo from your terminal
+2. If working on a **local machine**, then clone the repo from your terminal.
 
 ``` bash
 git clone https://github.com/ramantehlan/Spero
