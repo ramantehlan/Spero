@@ -1,24 +1,31 @@
 <p align="center">
-    <img src="https://ramantehlan.github.io/Spero/app/static/img/sperolo.png" width="150">
+    <img src="https://ramantehlan.github.io/Spero/app/static/img/sperolo.png" >
 </p>
 
-# Spero
-Spero is a decentralized job search application to connect refugees/asylums/government to entry-level/expert jobs in their area, employers gain credibility for hiring a refugee which they can later exchange for discounts and gift from sponsors.
+# Welcome to Project Spero
+**Spero** is an open source decentralized job marketplace for refugees, asylums, NGOs and governments. we leverage blockchain and artificial intelligence to connected about 65.6 million refugees to jobs around the world.
+
+This project was created December 2017 for the biggest [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon organized by **UAE Government** in 2017.
+
+## Screenshots
+
+<p>
+<img src="https://ramantehlan.github.io/Spero/app/static/img/sperolo.png" width="430">
+</p>
 
 ## Video Demo
 
 <a href="https://www.youtube.com/watch?v=OQjC_p12kL0" target="blank"><img src="https://image.ibb.co/nBZHSG/pict.jpg"
-alt="Start Demo" width="1000" height="600" border="10" /></a>
+alt="Start Demo" width="430" border="5" /></a>
 
-[TOC]
-#Installation#
-## Requirements ##
+## Requirements
 * python 2.7
 * linux, unix, mac, windows(with attachments)
 * git
+* Flask
 * [IPFS](https://dist.ipfs.io/#go-ipfs)
 
-## Setting Up Development Environment ##
+## Installation
 
 1. **Fork** the reposistory from Github and rename to your project.
 
@@ -32,8 +39,7 @@ python app.py (this will be running on localhost:8081)
 ```
 You can now check your localhost to see if it deployed correctly.
 
-# Working with the flask template #
-## File Hierarchy ##
+## File Hierarchy
 ```
 - Project Name
    - App
@@ -64,7 +70,7 @@ Once you are done making changes to this file run create_db.py to make the chang
 * start.py - This file is a very quick example of a python file that will render a page. This file processes and renders the start.html file located under templates.
 
 
-## Reading and Writing to the database ##
+## Reading and Writing to the database
 
 In order to read from a database you will need to make a query to get the data. You can find out more about queries at [the peewee site](http://docs.peewee-orm.com/en/latest/peewee/querying.html)
 one quick example of a query would be the following:
@@ -73,7 +79,20 @@ query = tableName.get( condition = something )
 ```
 This will return a python object that will have the data as attributes. You can pass this object to the html file. You can access this data by typing query.Column.
 
-## Documentation links ##
+## Contribution
+
+Feel free to add your own features or improve any current feature, any kind of help is appreciated.
+
+The core team of this project is following:
+* [Raman Tehlan](https://github.com/ramantehlan)
+* [Sher Sanginov](https://github.com/sanginovs)
+* [Luyao Luisa Ji](https://github.com/luluissaa)
+
+## License
+
+GNU General Public License v3.0
+
+## Documentation links
 
 * [Jinja Documentation](http://jinja.pocoo.org/)
 * [Peewee Documentation](http://docs.peewee-orm.com/en/latest/)
