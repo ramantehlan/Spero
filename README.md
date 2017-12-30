@@ -74,7 +74,7 @@ If I wanted to create a new webpage then I would do the following.
             return render_template("example.html", cfg = cfg)
 ```
 * Create HTML file inside of the templates folder and make sure to give it the **same name** as the one you used in the python file.
-```HTML
+```
 {% extends "base.html" %}
 
 {% block body %}
@@ -85,7 +85,7 @@ If I wanted to create a new webpage then I would do the following.
 {% endblock %}
 ```
 * Import the python file you created inside the \_\_init\_\_.py file.
-```Python
+```
 from app import example.py
 ```
 
@@ -93,7 +93,7 @@ from app import example.py
 
 In order to read from a database you will need to make a query to get the data. You can find out more about queries at [the peewee site](http://docs.peewee-orm.com/en/latest/peewee/querying.html)
 one quick example of a query would be the following:
-```python
+```
 query = tableName.get( condition = something )
 ```
 This will return a python object that will have the data as attributes. You can pass this object to the html file. You can access this data by typing query.Column.
