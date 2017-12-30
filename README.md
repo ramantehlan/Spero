@@ -10,7 +10,15 @@ This project was created December 2017 for the biggest [**Global Virtual GovHack
 ## Screenshots
 
 <p>
-<img src="https://ramantehlan.github.io/Spero/app/static/img/sperolo.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/WelcomePage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/Register.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/EmployerRegister.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/LoginPage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/DashboardPage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/ProfilePage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/PostJobsPage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/SearchPage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/SettingsPage.png" width="430">
 </p>
 
 ## Video Demo
