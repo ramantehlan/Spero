@@ -3,25 +3,55 @@
 </p>
 
 # Welcome to Project Spero
-**Spero** is an open source decentralized job marketplace for refugees, asylums, NGOs and governments. we leverage blockchain and artificial intelligence to connected about 65.6 million refugees to jobs around the world.
+**Spero** is an open source decentralized job marketplace for refugees, asylums, NGOs and governments. we leverage blockchain and artificial intelligence to connected about 65.6 million refugees to jobs around the world. This project was created in December 2017 for the biggest [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon organized by **UAE Government** in 2017.
 
-This project was created December 2017 for the biggest [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon organized by **UAE Government** in 2017.
+**Not all refugees are educated or have a mobile/computer, can still they use Spero?**
 
-## Screenshots
+* Refugees can register themselves or through other asylums, NGOs and governments, they can also ask the experienced or educated refugees to register them.
 
+**Employers often lack trusts in a refugee's legal status, qualification, experience, language skills, the list goes on, how can Spero tackle that? Also how you ensure and protects the rights and fair treatment of refugees?**
+ 
+* Each refugee has to register before he can access jobs, his experience is stored in his public blockchain which validates his experience, qualification and identity. 
+* He can report an employer and each refugee is asked to give ratings to employers, ratings and reports are used as metrics to give points to employers.
+*  points can be later exchanged for discounts and gifts from our sponsors. it encourages employers to treat refugees positively and also allows government bodies or private-sector sponsors to contribute to refugee resettlement.
+
+**what about the distressed and depressed refugees?**
+
+* An in-app AI assistant,"Amica", is also there to help and motivate all the refugees to start a new life by navigating available career options and resources independently. it also gives tips to manage distress and reminders for completing job applications. 
+* It is of Latin origin, and the meaning of Amica is "loved friend". In Italian "amica" means "friend".
+
+**How is spero secure, reliable and accessible?**
+
+* Spero use IPFS and Smart contracts.
+* Posted jobs by employers are stored using IPFS to ensure the identity of the information. whereas refugee identity, application of jobs, employer points, ratings are all stored using Ethereum smart contract to ensure that the information is tamper-proof.
+
+**Why is the meaning of Spero?**
+
+* Spero means "I Hope" in Italian.
+* It is also a part of Latin proverb: Dum Spiro Spero (While I Breathe, I Hope)
+
+
+## Design
+*This is the first design/prototype which was created for Spero, the current design might differ form it.*
+     
+<p align="center">
+       <img src="https://ramantehlan.github.io/Spero/app/static/Design/WelcomePage.png" width="500" border="5">
+</p>
 <p>
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/WelcomePage.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/Register.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/EmployerRegister.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/LoginPage.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/DashboardPage.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/ProfilePage.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/PostJobsPage.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/SearchPage.png" width="430">
-<img src="https://ramantehlan.github.io/Spero/app/static/Design/SettingsPage.png" width="430">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/Register.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/EmployerRegister.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/LoginPage.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/DashboardPage.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/ProfilePage.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/PostJobsPage.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/SearchPage.png" width="430" border="5">
+<img src="https://ramantehlan.github.io/Spero/app/static/Design/SettingsPage.png" width="430" border="5">
 </p>
 
-## Video Demo
+
+
+## Demo Video
+*This is the final submission video for [**Global Virtual GovHack**](http://hackathon.govtechprize.ae/) hackathon*
 
 <a href="https://www.youtube.com/watch?v=OQjC_p12kL0" target="blank"><img src="https://image.ibb.co/nBZHSG/pict.jpg"
 alt="Start Demo" width="430" border="5" /></a>
@@ -100,9 +130,9 @@ The core team of this project is following:
 
 GNU General Public License v3.0
 
-## Documentation links
+## Documentation
 
-* [Jinja Documentation](http://jinja.pocoo.org/)
-* [Peewee Documentation](http://docs.peewee-orm.com/en/latest/)
-* [Git documentation](https://git-scm.com/documentation)
-* [Flask Documentation](http://flask.pocoo.org/docs/0.10/)
+* [Jinja](http://jinja.pocoo.org/)
+* [Peewee](http://docs.peewee-orm.com/en/latest/)
+* [Git](https://git-scm.com/documentation)
+* [Flask](http://flask.pocoo.org/docs/0.10/)
