@@ -63,24 +63,28 @@ def profil(username):
     user=Employers.get(Employers.username==username)
     return render_template("employer/profil.html", cfg=cfg, user=user)
 
-joblist=[]
 @app.route("/postjob/<username>", methods=["GET", "POST"])
 def postjob(username):
     if request.method == 'POST':
       user=Employers.get(Employers.username==username)
       title=request.form["title"]
-      description=request.form["description"]
+      extra=request.form["descript"]
       salary=request.form['salary']
       location=request.form['location']
       job={}
       job["title"]= title
-      job["description"]=description
+      job["description"]=extra
       job["salary"]=salary
       job["location"]=location
       ipfs=api.add_json(job).encode("utf-8")
-      print "This is stored in IPFS file system", ipfs
-      joblist.append(ipfs)
-      print joblist
+      print "This job is stored in IPFS file system", ipfs
+
+      job = Jobs(employer=user.uid,
+                title=title,
+                address=location,
+                salary=salary,
+                description= job["description"]
+                ).save()
       return render_template("employer/jobpost.html", user=user, cfg=cfg)
     user=Employers.get(Employers.username==username)
     return render_template("employer/jobpost.html", user=user, cfg=cfg)

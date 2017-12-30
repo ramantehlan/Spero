@@ -1,6 +1,5 @@
 # Spero
-Refugees only job search application.
-
+Spero is a decentralized job search application to connect refugees/asylums/government to entry-level/expert jobs in their area, employers gain credibility for hiring a refugee which they can later exchange for discounts and gift from sponsors.
 
 
 [TOC]
@@ -8,7 +7,8 @@ Refugees only job search application.
 ## Requirements ##
 * python 2.7
 * linux, unix, mac, windows(with attachments)
-* git 
+* git
+* [IPFS](https://dist.ipfs.io/#go-ipfs)
 
 ## Creating Development Environment ##
 
@@ -19,10 +19,10 @@ Refugees only job search application.
 ``` bash
 git clone https://username@bitbucket.org/username/repositoryname.git
 source setup.sh
-python app.py
+ipfs daemon (this will be running on localhost:8080)
+python app.py (this will be running on localhost:8081)
 ```
 You can now check your localhost to see if it deployed correctly.
-
 
 # Working with the flask template #
 ## File Hierarchy ##
@@ -88,7 +88,7 @@ one quick example of a query would be the following:
 ```python
 query = tableName.get( condition = something )
 ```
-This will return a python object that will have the data as attributes. You can pass this object to the html file. You can access this data by typing query.Column. 
+This will return a python object that will have the data as attributes. You can pass this object to the html file. You can access this data by typing query.Column.
 
 ## Documentation links ##
 

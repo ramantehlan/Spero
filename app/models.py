@@ -58,3 +58,4 @@ class Jobs(dbModel):
     title         = TextField()
     address       = TextField()
     salary        = TextField()
+    description   = TextField()

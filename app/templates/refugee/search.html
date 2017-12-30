@@ -12,10 +12,10 @@
        <div class="modal-content">
          <div class="modal-header">
            <button type="button" class="close" data-dismiss="modal">&times;</button>
-           <h3 class="modal-title" style="color:green;">Success</h3>
+           <h3 class="modal-title" style="color:green">Success</h3>
          </div>
          <div class="modal-body">
-           <p> <b>You application is on its way!!!</b></p>
+           <p> <b>You application is on its way</b></p>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -42,10 +42,10 @@
   <div class="row">
     <div class="col-md-10">
       <h2 style="text-align:center;"> Search Results: </h2>
-      {%for i in jobs%}
+      {%for i in range(jobs|length -1, -1, -1)%}
       <div class="jumbotron" style="background-color:white;">
         <div>
-        {{i.title}} <br> {{i.address}} <br> {{i.salary}}
+        {{jobs[i].title}} <br> {{jobs[i].address}} <br> {{jobs[i].salary}} <br>{{jobs[i].description}}
         </div>
         <div class="pull-right">
           <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Apply</button>
