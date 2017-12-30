@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://ramantehlan.github.io/Spero/app/static/img/sperolo.png" width="150">
+</p>
+
 # Spero
 Spero is a decentralized job search application to connect refugees/asylums/government to entry-level/expert jobs in their area, employers gain credibility for hiring a refugee which they can later exchange for discounts and gift from sponsors.
 
@@ -63,7 +67,7 @@ Once you are done making changes to this file run create_db.py to make the chang
 If I wanted to create a new webpage then I would do the following.
 
 * Create your python file inside of the app/ directory. Here you will include the decorator @app.route as seen in other files
-```python
+```
         from allImports import *
         @app.route("/example", methods = ["GET"])
         def example():
