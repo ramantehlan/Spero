@@ -27,7 +27,7 @@ Here are some problems which were tackled while creating Spero.
 * Spero use IPFS and Smart contracts.
 * Posted jobs by employers are stored using IPFS to ensure the identity of the information. whereas refugee identity, application of jobs, employer points, ratings are all stored using Ethereum smart contract to ensure that the information is tamper-proof.
 
-**Why is the meaning of Spero?**
+**What is the meaning of Spero?**
 
 * Spero means "I Hope" in Italian.
 * It is also a part of Latin proverb: Dum Spiro Spero (While I Breathe, I Hope)
